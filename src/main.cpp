@@ -1,29 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <typeinfo>
-
-class Exercise
-{
-public:
-    Exercise()
-    {
-        std::cout << "Exercise constructor " << this << std::endl;
-    }
-    virtual ~Exercise(){};
-    virtual void execute() = 0;
-    void log() const
-    {
-        std::cout << typeid(*this).name() << " executed " << this << std::endl;
-    }
-};
-
-class Something : public Exercise
-{
-    void execute()
-    {
-        log();
-    }
-};
+#include "Exercise.hpp"
+#include "InitializerList.hpp"
 
 class Otherthing : public Exercise
 {
@@ -36,7 +15,7 @@ class Otherthing : public Exercise
 int main(void)
 {
     std::vector<Exercise*> exercises;
-    exercises.push_back(new Something());
+    exercises.push_back(new InitializerList());
     exercises.push_back(new Otherthing());
     for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
     {
