@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 project (learning_cpp)
 SET( CMAKE_CXX_FLAGS  "-g -std=c++11" )
+#SET( CMAKE_CXX_FLAGS  "-g")
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src sources)
 add_executable (learning_cpp ${sources})
 target_link_libraries (learning_cpp)

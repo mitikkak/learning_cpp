@@ -6,6 +6,7 @@ c++11:
 -------
 http://www.stroustrup.com/C++11FAQ.html#language
  - __cplusplus
+     => InitializerList
  - alignments
  - attributes
  - atomic operations

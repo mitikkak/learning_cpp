@@ -5,10 +5,15 @@
 #include "InitializerList.hpp"
 
 InitializerList::InitializerList() :
+#if __cplusplus > 199711L
         container({ 1, 2 })
+#else
+       container()
+#endif
 {
 }
 
+#if __cplusplus > 199711L
 void InitializerList::log(std::initializer_list<int> args) const
 {
     for (auto p : args)
@@ -23,6 +28,7 @@ void InitializerList::log(std::initializer_list<std::pair<int,int>> args) const
         std::cout << "InitializerList::log<pair<int,int>> " << p.first << ", " << p.second << "\n";
     }
 }
+#endif
 void InitializerList::execute()
 {
     Exercise::log();
@@ -30,7 +36,9 @@ void InitializerList::execute()
     {
         std::cout << "container[" << i << "] " << container[i] << std::endl;
     }
+#if __cplusplus > 199711L
     log({ 1, 2, 3 });
     log({{ 1, 2}, {3, 4}});
+#endif
 }
 
