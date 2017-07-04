@@ -5,6 +5,7 @@
 #include "InitializerList.hpp"
 #include "LongLongInteger.hpp"
 #include "Alignment.hpp"
+#include "Atomic.hpp"
 
 int main(void)
 {
@@ -12,6 +13,7 @@ int main(void)
     exercises.push_back(new InitializerList());
     exercises.push_back(new LongLongInteger());
     exercises.push_back(new Alignment());
+    exercises.push_back(new Atomic());
     for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
     {
         (*it)->execute();
