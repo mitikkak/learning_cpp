@@ -8,8 +8,11 @@ http://www.stroustrup.com/C++11FAQ.html#language
  - __cplusplus
      => InitializerList
  - alignments
+     => Alignment
  - attributes
+     => Attributes
  - atomic operations
+     => Atomic
  - auto (type deduction from initializer)
     => InitializerList
  - C99 features

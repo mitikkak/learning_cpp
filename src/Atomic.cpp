@@ -70,6 +70,7 @@ void* dot_product_old(void* args)
         }
         data.result += partial_sum;
     }
+    return NULL;
 }
 
 void Atomic::execute()

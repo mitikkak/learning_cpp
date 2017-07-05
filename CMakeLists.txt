@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.8)
 project (learning_cpp)
-string( CONCAT common_compiler_flags  "-g -pthread -static-libstdc++" )
+string( CONCAT common_compiler_flags  "-Wreturn-type -Werror -g -pthread -static-libstdc++" )
 string( CONCAT modern_cpp_specific_compiler_flags " -std=c++11" )
 string(CONCAT all_compiler_flags ${common_compiler_flags} ${modern_cpp_specific_compiler_flags})
 SET( CMAKE_CXX_FLAGS ${all_compiler_flags})
