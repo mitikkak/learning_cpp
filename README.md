@@ -17,7 +17,9 @@ http://www.stroustrup.com/C++11FAQ.html#language
     => InitializerList
  - C99 features
  - enum class (scoped and strongly typed enums)
+    => EnumClass
  - [[carries_dependency]]
+    => similar as Attributes exercise
  - copying and rethrowing exceptions
  - constant expressions (generalized and guaranteed;constexpr)
  - decltype

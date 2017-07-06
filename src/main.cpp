@@ -7,6 +7,7 @@
 #include "Alignment.hpp"
 #include "Atomic.hpp"
 #include "Attributes.hpp"
+#include "EnumClass.hpp"
 
 int main(void)
 {
@@ -16,6 +17,7 @@ int main(void)
     exercises.push_back(new Alignment());
     exercises.push_back(new Atomic());
     exercises.push_back(new Attributes());
+    exercises.push_back(new EnumClass());
     for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
     {
         (*it)->execute();

@@ -35,8 +35,8 @@ void Attributes::execute()
     {
         printf("Attributes::execute catched exception(2): %u %s \n", e.code().value(), e.what());
     }
-#endif
     printf("Attributes::execute do_this(): %u \n", do_this());
+#endif
     log();
 }
 
