@@ -21,6 +21,7 @@ http://www.stroustrup.com/C++11FAQ.html#language
  - [[carries_dependency]]
     => similar as Attributes exercise
  - copying and rethrowing exceptions
+    => CopyAndRethrowException
  - constant expressions (generalized and guaranteed;constexpr)
  - decltype
  - control of defaults: default and delete
