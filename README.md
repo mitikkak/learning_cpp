@@ -65,6 +65,7 @@ http://www.stroustrup.com/C++11FAQ.html#language
  - unions (generalized)
  - user-defined literals
  - variadic templates
+   => VariadicTemplate
 c++11 Standard Library:
 -----------------------
 http://www.stroustrup.com/C++11FAQ.html#library
