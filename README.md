@@ -55,6 +55,7 @@ http://www.stroustrup.com/C++11FAQ.html#language
  - raw string literals
  - right-angle brackets
  - rvalue references
+     => RValueReference
  - Simple SFINAE rule
  - static (compile-time) assertions (static_assert)
  - template alias

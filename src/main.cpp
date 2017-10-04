@@ -10,6 +10,7 @@
 #include "EnumClass.hpp"
 #include "CopyAndRethrowException.hpp"
 #include "VariadicTemplate.hpp"
+#include "RValueReference.hpp"
 
 int main(void)
 {
@@ -22,6 +23,7 @@ int main(void)
     exercises.push_back(new EnumClass());
     exercises.push_back(new CopyAndRethrowException());
     exercises.push_back(new VariadicTemplate());
+    exercises.push_back(new RValueReference());
     for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
     {
         (*it)->execute();
