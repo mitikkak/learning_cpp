@@ -11,6 +11,7 @@
 #include "CopyAndRethrowException.hpp"
 #include "VariadicTemplate.hpp"
 #include "RValueReference.hpp"
+#include "OverrideControls.hpp"
 
 int main(void)
 {
@@ -24,12 +25,17 @@ int main(void)
     exercises.push_back(new CopyAndRethrowException());
     exercises.push_back(new VariadicTemplate());
     exercises.push_back(new RValueReference());
+    exercises.push_back(new OverrideControls());
     for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
     {
         (*it)->execute();
 //        std::cout << typeid(it).name() << std::endl;
 //        std::cout << typeid(*it).name() << std::endl;
 //        std::cout << typeid(*(*it)).name() << std::endl;
+    }
+    for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
+    {
+        delete *it;
     }
     return 0;
 }

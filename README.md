@@ -48,7 +48,9 @@ http://www.stroustrup.com/C++11FAQ.html#language
  - [[noreturn]]
  - null pointer (nullptr)
  - override controls: override
+    => OverrideControls
  - override controls: final
+    => OverrideControls
  - PODs (generalized)
  - range-for statement
      => InitializerList
