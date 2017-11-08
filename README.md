@@ -35,6 +35,7 @@ http://www.stroustrup.com/C++11FAQ.html#language
  - for statement; see range-for statement
  - suffix return type syntax (extended function declaration syntax)
  - in-class member initializers
+    => InClassMemberInitializers
  - inherited constructors
  - initializer lists (uniform and general initialization)
  - Inline namespace

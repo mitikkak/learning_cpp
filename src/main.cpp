@@ -12,6 +12,7 @@
 #include "VariadicTemplate.hpp"
 #include "RValueReference.hpp"
 #include "OverrideControls.hpp"
+#include "InClassMemberInitializers.hpp"
 
 int main(void)
 {
@@ -26,6 +27,7 @@ int main(void)
     exercises.push_back(new VariadicTemplate());
     exercises.push_back(new RValueReference());
     exercises.push_back(new OverrideControls());
+    exercises.push_back(new InClassMemberInitializers());
     for (std::vector<Exercise*>::iterator it = exercises.begin(); it != exercises.end(); ++it)
     {
         (*it)->execute();
